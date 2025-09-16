@@ -1,4 +1,4 @@
-#this is the place your documenting your homework for Rachel
+# Haiku Homework
 I started by running a CD command to enter the HAIKU folder from class. I did this by dragging the haiku folder into the terminal and I got this command `cd /Users/Taylor/Documents/GitHub/itp/HAIKU\`.				
 
 I chose this Haiku, its called "O Snail" by Kobayashi Issa 
