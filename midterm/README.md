@@ -28,8 +28,10 @@ TOPPINGS
 For the cheese and lettuce, I used smaller rectangles and colored them accordingly. 
 
 ##Phase #3
-I started by taking the function from class for the eyeball and replaced the code for the eyeball with the code for the burger. 
+I started by taking the function from class for the eyeball once again, and replaced the code for the eyeball with the code for the burger. 
 Then, assuming that the patty starts at (0, 0), I made it so the X and Y values for the other shapes were based around that. 
+
+Lastly, I just put in the different functions needed to make sure that when I call the function and change the position and scale, it all looks correct.
 
 ##Phase #4
 
@@ -38,3 +40,4 @@ Using I for columns and J for rows I set up this line of code: `(let i = 0; i < 
 This made it so my burgers wouldnt repeat for infinity but only the amount of rows or columns there are. 
 I then designated the amount of rows and columns as well as the cell width and height (for a 5x5 grid). I placed this above the nested loop. 
 To change eveything to 10x10 or 20x20 I just had to change the numbers in the let statements for columns, rows, and cell height and width. So for 5x5 the columns and rows are set to 5 each and the width and height of the burgers to 80. The same idea goes for 10 and 20. 
+And for some reason when I tried to put the nested for-loop at the bottom of the code, it didn't work, but it did work when I put above the function for the burger inside the "function setup". 

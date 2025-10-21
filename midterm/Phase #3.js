@@ -1,25 +1,30 @@
+
 function setup() {
   createCanvas(500, 500);
   noStroke();
 }
 
-function burger(x, y) {
+function burger(x, y, s) {
+push();
+  scale(s);
+  translate(x, y);
   fill('#E4B684');
-  ellipse(x+94, y-5, 188, 70); // Top Bun
+  ellipse(x+94, y-5, 188, 70); 
   fill('#5A3711')
-  rect(x, y, 188, 30, 10); // Patty
+  rect(x, y, 188, 30, 10); 
   fill('#FFD604');
-  rect(x, y, 188, 4); // Cheese
+  rect(x, y, 188, 4); 
   fill('#21C513');
-  rect(x, y+2, 188, 6); // Lettuce
+  rect(x, y+2, 188, 6); 
   fill('#E4B684')
-  rect(x, y+30, 188, 30,); // Bottom Bun
+  rect(x, y+30, 188, 30,);
+pop();
 }
 
 function draw() {
 background('#3DBCC0');
-  burger(265, 44);
-  burger(20, 50);
-  burger(265, 374);
-  burger(120, 180);
+  burger(265, 44, .5);
+  burger(20, 100, .7);
+  burger(265, 374, .6);
+  burger(120, 180, 1);
 }

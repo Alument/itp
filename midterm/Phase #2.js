@@ -6,14 +6,14 @@ function setup() {
 function draw() {
   background('#3DBCC0');
   fill('#E4B684');
-  ellipse(294, 145, 188, 70); // Top Bun
+  ellipse(294, 145, 188, 70); 
   fill('#5A3711')
-  rect(200, 150, 188, 30, 10); // Patty
+  rect(200, 150, 188, 30, 10); 
   fill('#FFD604');
-  rect(200, 150, 188, 4); // Cheese
+  rect(200, 150, 188, 4); 
   fill('#21C513');
-  rect(200, 152, 188, 6); // Lettuce
+  rect(200, 152, 188, 6); 
   fill('#E4B684')
-  rect(200, 180, 188, 30,); // Bottom Bun
+  rect(200, 180, 188, 30,);
   
 }
