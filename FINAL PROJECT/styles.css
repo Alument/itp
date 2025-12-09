@@ -1,0 +1,188 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0e0e0e;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* horizontal centering */
+}
+
+p {
+  font-size: 1.2rem;
+    padding: 0px;
+    color: rgb(216, 230, 255);
+}
+
+img {
+    padding: 50px;
+    width: 250px;
+    border-radius: 150px;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+
+
+header {
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 10px 30px;
+}
+
+/* Header nav flex container */
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 850px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+/* Site title in center */
+.site-title {
+  margin: 0;
+  font-size: 1.8em;
+  color: #ffffff;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-align: center;
+  flex-grow: 0;
+  user-select: none;
+}
+
+/* Left and right nav groups */
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+header h1, header nav a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.header-nav a:hover {
+  color: #00aaff;
+}
+
+
+
+.paragraph-container {
+  width: 800px;
+  height: 200px;
+  padding: 30px;
+}
+
+
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Row layout for each service */
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Alternate every other row */
+.service-row:nth-child(even) {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl;     /* flips left ↔ right */
+}
+
+.service-row:nth-child(even) > * {
+  direction: ltr;      /* maintain normal text direction */
+}
+
+/* Card base */
+.service-card {
+  background: #111;
+  border-radius: 18px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 900px;
+}
+
+.service-card img {
+  width: 900px;
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+.service-card p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Descriptions */
+.service-desc {
+  font-size: 1.4rem;      /* bigger text */
+  color: #ddd;
+  line-height: 1.6;
+  text-align: center;     /* center the text inside its column */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;    /* vertically centers the paragraph in its space */
+}
+
+
+audio {
+  width: 300px;                /* make it bigger/smaller */
+  border-radius: 8px;          /* rounded edges */
+  filter: drop-shadow(0 0 6px rgba(0, 150, 255, 0.4));
+  margin: 15px 0;
+}
+
+
+
+iframe {
+ padding: 30px;
+ width: 900px;
+  
+}
